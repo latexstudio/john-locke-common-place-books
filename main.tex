@@ -1,0 +1,97 @@
+\documentclass[17pt, a6paper, oneside]{book}
+\usepackage{extsizes}
+\usepackage[veryoldstyle]{kpfonts}
+\usepackage{fwlw}
+
+\newcommand\VV{V\kern-0.3ex V}
+
+\setlength{\hoffset}{0.5in}
+\addtolength{\textwidth}{-2\hoffset}
+\usepackage{fancyhdr}
+\fancypagestyle{doublerule}{%
+    \fancyhead{}
+    \renewcommand{\headrulewidth}{2pt}
+    \renewcommand{\headrule}{%
+        \hbox to\headwidth{\leaders\hrule height \headrulewidth\hfill}%
+        \vskip0.8\baselineskip%
+        \hbox to\headwidth{\leaders\hrule height \headrulewidth\hfill}
+    }
+    \fancyfoot{}
+    \fancyfoot[R]{\raisebox{0.8\thefontsize}{\usebox\NextWordBox}}
+}
+\makeatletter
+\newlength{\thefontsize}
+\setlength{\thefontsize}{\f@size pt}
+\makeatother
+\fancypagestyle{default}{%
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[C]{\fontsize{\thefontsize}{\thefontsize}\selectfont\large\thepage}
+    \fancyfoot[R]{\raisebox{0.8\thefontsize}{\usebox\NextWordBox}}
+}
+\fancyhf{}
+\pagestyle{default}
+\setlength{\headsep}{0.5\thefontsize}
+
+\newlength{\gap}
+\setlength{\gap}{0.02\textwidth}
+\newlength{\hapage}
+\setlength{\hapage}{0.5\textwidth}
+\newlength{\shapeindent}
+\setlength{\shapeindent}{0.065\textwidth}
+%\addtolength{\shapeindent}{0.005\textwidth}
+\newlength{\shapelength}
+\setlength{\shapelength}{\textwidth}
+\addtolength{\shapelength}{-\shapeindent}
+%\addtolength{\shapelength}{-\gap}
+
+%\usepackage{color}
+%\usepackage{yfonts}
+%\renewcommand*\rmdefault{dayroms}
+%\usepackage[T1]{fontenc}
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{babel}
+%\usepackage[T1]{fontenc}
+%\renewcommand\rmdefault{dayroms}
+
+\title{A New Method of Making Common-Place-Books}
+\author{John Locke}
+
+%WRITTEN
+%By the late Learned Mr. John Lock,
+%Author of the ESSAY concerning
+%Humane Understanding.
+%
+%
+%
+%Translated from the French.
+%
+%
+%
+%TO WHICH
+%
+%Is added Something from Monsieur Le
+%Clerc, relating to the same Subject.
+%
+%A TREATISE necessary for all Gentle-
+%men, especially Students of Divinity, Physick,
+%and Law.
+%
+%There are also added Two Letters, containing a
+%most Useful Method for instructing Persons that
+%are Deaf and Dumb, or that Labour under any
+%Impediments of Speech, to speak distinctly; writ
+%by the late Learned Dr. John Wallis, Geometry
+%Proefess. Oxon, and F.R.S.
+%
+%
+%
+%LONDON:
+%
+%Printed for J. Greenwood, Bookseller, at the
+%
+%End of Cornhil, next Stocks-Market, 1706.
+
+\begin{document}\sloppy
+\input{parts/01}
+\end{document}
