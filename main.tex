@@ -4,6 +4,7 @@
 \usepackage{fwlw}
 \usepackage{yfonts}
 \usepackage{colortbl}
+\usepackage[english]{babel}
 
 \newcommand\VV{V\kern-0.3ex V}
 
@@ -58,6 +59,15 @@
 \setlength{\shapelength}{\textwidth}
 \addtolength{\shapelength}{-\shapeindent}
 
+\makeatletter
+\newcommand\place[1]{
+    \textsc{#1}]
+}
+\makeatother
+
+\usepackage{lineno}
+\renewcommand\thelinenumber{\Large`}
+
 \title{A New Method of Making Common-Place-Books}
 \author{John Locke}
 
@@ -68,4 +78,5 @@
 \input{parts/01}
 \input{parts/02}
 \input{parts/index}
+\input{parts/03}
 \end{document}
