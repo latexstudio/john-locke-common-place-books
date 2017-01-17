@@ -1,44 +1,38 @@
 \fancyhead[C]{\fontsize{\thefontsize}{\thefontsize}\selectfont\Large\itshape Epistle Dedicatory.}
-\fancyfoot[C]{}
 \thispagestyle{doublerule}
-\vspace*{\parskip}
+\vspace*{0pt}
 
 \begin{center}
 {
-    \LARGE
-    T\,O\\[0.5\baselineskip]
-}
-{
-    \LARGE
-    \emph{Mr.}\; Edward\; Northey,\\[0.5\baselineskip]
+    \Large
+    T\,O\\[0.5\thefontsize]
 }
 {
     \Large
-    O\,F\\[\baselineskip]
+    \emph{Mr.}\; Edward\; Northey,\\[0.5\thefontsize]
 }
-
 {
-    \Huge
-    \textit{H\,A\,C\,K\,N\,E\,Y}.\\[\baselineskip]
+    \large
+    O\,F\\[0.5\thefontsize]
 }
-\end{center}
 
 {
     \LARGE
-    S\,I\,R,
+    \textit{H\,A\,C\,K\,N\,E\,Y}.\\[0.5\thefontsize]
 }
+\end{center}
+
+{\large S\,I\,R,}
 
 \newsavebox{\dropcap}
-\savebox{\dropcap}{\Huge I}
+\savebox{\dropcap}{\scalefont{2.8}I}
 \newlength{\dropcapheight}
 \newlength{\dropcapwidth}
 \settoheight{\dropcapheight}{\usebox{\dropcap}}
 \settowidth{\dropcapwidth}{\usebox{\dropcap}}
-\null\smash{
-    \raisebox
-        {-\dimexpr \dropcapheight+0.6\baselineskip\relax}
-        {\noindent\usebox{\dropcap}}
-}
+\smash{\raisebox%
+    {-\dimexpr \dropcapheight+0.6\thefontsize\relax}%
+    {\noindent\usebox{\dropcap}}}%
 
 \setlength{\shapeindent}{\dimexpr \dropcapwidth+1em\relax}
 \setlength{\shapelength}{\textwidth}
@@ -81,6 +75,8 @@ in cited thereto on the one Hand by the good Example of your \VV orthy Parents=,
 
 This=, Sir, is= the Hearty \VV ish and Desire of\\[\baselineskip]
 
-{\LARGE\hfill Your Friend and most\hspace*{4ex}}\\[\baselineskip]
+{\Large\hfill Your Friend and most\hspace*{4ex}}\\[\baselineskip]
 
-{\LARGE\hfill Humble Servant,\hspace*{4ex}}
+{\Large\hfill Humble Servant,\hspace*{4ex}}
+\clearpage
+\fancyhead[C]{}
