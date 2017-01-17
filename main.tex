@@ -1,4 +1,4 @@
-\documentclass[10pt, a6paper, oneside]{book}
+\documentclass[10pt, a6paper]{book}
 \usepackage{extsizes}
 \usepackage[veryoldstyle]{kpfonts}
 \usepackage{fwlw}
@@ -6,9 +6,13 @@
 
 \newcommand\VV{V\kern-0.3ex V}
 
-\usepackage[a6paper, total={2.5in, 4in}]{geometry}
+\usepackage[a6paper, total={2.5in, 4in}, marginparwidth=0.7in, marginparsep=1ex]{geometry}
 \addtolength{\textheight}{0.5in}
 \usepackage{scalefnt}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{backgrounds}
 
 \usepackage{fancyhdr}
 \fancypagestyle{doublerule}{%
@@ -31,7 +35,7 @@
     \fancyfoot[R]{
         \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
             \node[align=right, inner sep = 0pt] (next word)
-                [anchor=north east] at (0, 2.75\thefontsize)
+                [anchor=north east] at (0, 2.5\thefontsize)
                 {\usebox\NextWordBox};
         \end{tikzpicture}
     }
@@ -39,6 +43,9 @@
 \fancyhf{}
 \pagestyle{default}
 \setlength{\headsep}{0.5\thefontsize}
+
+\usepackage[side, symbol, flushmargin, perpage, ragged]{footmisc}
+\renewcommand{\thefootnote}{\normalsize\raisebox{-0.5\baselineskip}{\fnsymbol{footnote}}}
 
 \newlength{\gap}
 \setlength{\gap}{0.02\textwidth}
@@ -50,16 +57,13 @@
 \setlength{\shapelength}{\textwidth}
 \addtolength{\shapelength}{-\shapeindent}
 
-\usepackage{tikz}
-\usetikzlibrary{calc}
-\usetikzlibrary{backgrounds}
-
 \title{A New Method of Making Common-Place-Books}
 \author{John Locke}
 
 \begin{document}\sloppy
 \pagenumbering{gobble}
 \input{titlepage}
-\input{parts/01}
 \pagenumbering{arabic}
+\input{parts/01}
+\input{parts/02}
 \end{document}
