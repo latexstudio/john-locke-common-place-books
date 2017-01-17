@@ -1,19 +1,24 @@
-\documentclass[17pt, a6paper, oneside]{book}
+\documentclass[10pt, a6paper, oneside]{book}
 \usepackage{extsizes}
 \usepackage[veryoldstyle]{kpfonts}
 \usepackage{fwlw}
+\usepackage{yfonts}
 
 \newcommand\VV{V\kern-0.3ex V}
 
-\setlength{\hoffset}{0.5in}
-\addtolength{\textwidth}{-2\hoffset}
+\usepackage[a6paper, total={2.5in, 4in}]{geometry}
+\addtolength{\textheight}{0.5in}
+\usepackage{scalefnt}
+
+
+%\setlength{\hoffset}{0.5in}
+%\addtolength{\textwidth}{-2\hoffset}
 \usepackage{fancyhdr}
 \fancypagestyle{doublerule}{%
     \fancyhead{}
     \renewcommand{\headrulewidth}{2pt}
     \renewcommand{\headrule}{%
         \hbox to\headwidth{\leaders\hrule height \headrulewidth\hfill}%
-        \vskip0.8\baselineskip%
         \hbox to\headwidth{\leaders\hrule height \headrulewidth\hfill}
     }
     \fancyfoot{}
@@ -42,10 +47,14 @@
 \setlength{\shapelength}{\textwidth}
 \addtolength{\shapelength}{-\shapeindent}
 
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{backgrounds}
 
 \title{A New Method of Making Common-Place-Books}
 \author{John Locke}
 
 \begin{document}\sloppy
+\input{titlepage}
 \input{parts/01}
 \end{document}

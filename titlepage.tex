@@ -1,0 +1,111 @@
+\thispagestyle{empty}
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay, every node/.style={draw=none}]
+    \coordinate(center) at (current page.center);
+
+    \newlength\framewidth
+    \setlength\framewidth{0.65\paperwidth}
+    \newlength\frameheight
+    \setlength\frameheight{0.87\paperheight}
+    \newlength\framegap
+    \setlength\framegap{8pt}
+    \coordinate(frame north) at ([yshift=0.5\frameheight]center);
+    \coordinate(frame nw) at ([xshift=-0.5\framewidth]frame north);
+    \coordinate(frame ne) at ([xshift=0.5\framewidth]frame north);
+    \coordinate(frame south) at ([yshift=-0.5\frameheight]center);
+    \coordinate(frame sw) at ([xshift=-0.5\framewidth]frame south);
+    \coordinate(frame se) at ([xshift=0.5\framewidth]frame south);
+
+    \newlength\titleskip
+    \setlength\titleskip{0.2\thefontsize}
+    \node[align=center] (A) [anchor=north] at ([yshift=-0.01\paperheight]frame north) {
+        \Large A
+    };
+    \node[align=center] (new method) [anchor=north] at ([yshift=-\titleskip]A.south) {
+        \LARGE N\,E\,W\, M\,E\,T\,H\,O\,D
+    };
+    \node[align=center] (of making) [anchor=north] at ([yshift=-\titleskip]new method.south) {
+        \large OF MAKING
+    };
+    \node[align=center] (common place books) [anchor=north] at ([yshift=-\titleskip]of making.south) {
+        \Large Common-Place-Books=~;
+    };
+
+    \node[align=center] (written) [anchor=north] at ([yshift=-\titleskip]common place books.south) {
+        \large WRITTEN
+    };
+    \node[align=center] (author) [anchor=north] at ([yshift=-\titleskip]written.south) {
+        \begin{minipage}{0.95\framewidth}
+            \large
+            \hangindent=2ex
+            \noindent
+            By the late Learned Mr.\ \emph{John Lock},
+            Author of the \emph{ESSAY} \emph{concerning}
+            \emph{Humane Understanding}.
+        \end{minipage}
+    };
+
+    \node[align=center] (translated) [anchor=north] at ([yshift=-\titleskip]author.south) {
+        \textgoth{\large Translated from the French.}
+    };
+    \draw[line width = 0.5pt]
+        ([xshift=-0.475\framewidth]translated.north) -- ([xshift=0.475\framewidth]translated.north);
+    \draw[line width = 0.5pt]
+        ([xshift=-0.475\framewidth]translated.south) -- ([xshift=0.475\framewidth]translated.south);
+
+    \node[align=center] (to which) [anchor=north] at ([yshift=-2\titleskip]translated.south) {
+        T\,O\, W\,H\,I\,C\,H
+    };
+    \node[align=center] (le clerc) [anchor=north] at (to which.south) {
+        \begin{minipage}{0.95\framewidth}
+            \hangindent=2ex
+            \noindent
+            Is= added Something from Monsieur \emph{Le Clerc},
+            relating to the same Subject.
+        \end{minipage}
+    };
+    \node[align=center] (description) [anchor=north] at ([yshift=-\titleskip]le clerc.south) {
+        \begin{minipage}{0.95\framewidth}
+            \hangindent=2ex
+            \noindent
+            A TREATISE necessary for all Gentlemen,
+            especially \emph{Students} of \emph{Divinity}, \emph{Physick}, and \emph{Law}.
+        \end{minipage}
+    };
+    \node[align=center] (letters) [anchor=north] at ([yshift=-\titleskip]description.south) {
+        \begin{minipage}{0.95\framewidth}
+            \footnotesize
+            \hangindent=2ex
+            \noindent
+            There are also added Two Letters=,
+            containing a most Useful Method for instructing Persons= that are Deaf and Dumb,
+            or that Labour under any Impediments= of Speech,
+            to speak distinctly;
+            writ by the late Learned Dr. \emph{John Wallis},
+            Geometry Pr\oe fess. \emph{Oxon}, and \emph{F.R.S.}
+        \end{minipage}
+    };
+
+    \node[align=center, text width = 0.95\framewidth] (printer) [anchor=south] at ([yshift=\titleskip]frame south) {
+        \small
+        Printed for \emph{J. Greenwood}, Bookseller,
+        at the End of \emph{Cornhil}, next \emph{Stocks=-Market},
+        1706.
+    };
+    \node[align=center] (location) [anchor=south] at (printer.north) {
+        \emph{L\;O\;N\;D\;O\;N}:
+    };
+
+    \coordinate (terminator) at ($(letters.south)!0.5!(location.north)$);
+    \draw[line width = 1pt]
+        ([xshift=-0.475\framewidth]terminator) -- ([xshift=0.475\framewidth]terminator);
+
+    \draw[line width = 0.5pt]
+        (frame nw) rectangle (frame se);
+    \draw[line width = 1pt]
+        ($(frame nw) + (-\framegap, \framegap)$)
+        rectangle
+        ($(frame se) + (\framegap, -\framegap)$);
+\end{tikzpicture}
+\end{titlepage}
+\cleardoublepage
