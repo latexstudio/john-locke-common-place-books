@@ -1,6 +1,13 @@
 \clearpage
 \newpage
-\setcounter{page}{2}
+\fancyfoot[R]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+\setcounter{page}{1}
 \renewcommand\thepage{\arabic{page}}
 \fancyhead{}
 \fancyhead[C]{\large(\thepage)}
@@ -19,6 +26,7 @@
 \savebox{\dropcap}{\scalefont{2.8}I}
 \settoheight{\dropcapheight}{\usebox{\dropcap}}
 \settowidth{\dropcapwidth}{\usebox{\dropcap}}
+\nointerlineskip
 \smash{\raisebox%
     {-\dimexpr \dropcapheight+0.6\thefontsize\relax}%
     {\noindent\usebox{\dropcap}}}%
@@ -60,142 +68,311 @@
     about Seven or Eight Years= ago,
     while I might have receiv'd great Benefit by your Learned and Agreeable Conversation.
     All the Advantage that I aim at from this= Writing is= publickly to testifie the Esteem and Respect that I have for you,
-    and to declare how much I am, Sir, Your, \&c.
+    and to declare how much I am, Sir, Your, \etc.
 \end{linenumbers}
+\clearpage
+\newpage
 
-Before we come to the Matter in Hand, it may not be amiss= to remark that this= Method is= put in the same Order that the Collections= ought to be put in.
-you will perceive by the Reading of that which follows= what the Heads= mean, which you see at the Top of the Back of every Leaf, and at the Bottom of this= Page.
+\savebox{\dropcap}{\scalefont{2.8}\itshape B}
+\nointerlineskip
+\smash{\raisebox%
+        {-\dimexpr \dropcapheight+0.6\thefontsize\relax}[0pt][0pt]%
+        {\noindent\usebox{\dropcap}}%
+}%
 
-\place{Ebionites}
-In the Gospel of the Ebionites=, which they called the Gospel according to the Hebrews=, the History which is= in Matthew XIX.
-16.
-and the following ones=, was= thus= alter'd;
-One of the Rich men said unto him, Master, What good thing must I do that I may have Eternal Life?
+\setlength{\shapeindent}{\dimexpr \dropcapwidth+1em\relax}
+\setlength{\shapelength}{\textwidth}
+\addtolength{\shapelength}{-\shapeindent}
+\parshape=3
+\shapeindent \shapelength
+\shapeindent \shapelength
+0pt \textwidth
+\noindent{\itshape
+    Efore we come to the Matter in Hand,
+    it may not be amiss= to remark that this= Method is= put in the same Order that the Collections= ought to be put in.
+    You will perceive by the Reading of that which follows= what the Heads= mean,
+    which you see at the Top of the Back of every Leaf,
+    and at the Bottom of this= Page.
+}
+
+\vfill
+
+\place{EBIONITES.}
+In the Gospel of the \emph{Ebionites=},
+which they called the Gospel according to the \emph{Hebrews=},
+the History which is= in Matthew XIX.\ 16. and the following ones=, was= thus= alter'd;
+\emph{One of the Rich men said unto him,
+Master, What good thing must I do that I may have Eternal Life?
 Jesus= said unto him, obey the Law and the Prophets=.
 He answered, I have done it.
+Jesus= said unto him, go sell}\label{place:EI1}
+\marginpar{\flushright\raisebox{0pt}{\color{red}\pageref{place:EI2}}}
+\clearpage
+\newpage
 
-Jesus= said unto him, go sell
+\newsavebox\verte
+\savebox{\verte}{\bfseries V}
+\fancyfoot[RO]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[inner sep = 0pt] (verte)
+            [anchor=south west] at (2ex, 2.75\thefontsize)
+            {\usebox\verte};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+\newsavebox\placebox
+\savebox{\placebox}{\itshape ADVERSARIORUM METHODUS.}
+\fancyhead[LE]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[inner sep = 0pt] (verte)
+            [anchor=south west] at (0, 0)
+            {\usebox\verte};
+        \node[inner sep = 0pt] (place)
+            [anchor=north west] at (-3ex, -0.7\thefontsize)
+            {\usebox\placebox};
+    \end{tikzpicture}
+    \raisebox{-\thefontsize}{}
+}
+\marginpar{\footnotesize\raggedright\itshape \emph{Adversariorum Methodus=},
+or the Method of \emph{Common Places=}.}\label{place:AE1}
+I take a White Paper Book of what Size I think fit,
+I divide the Two First Pages= which face one another,
+by parallel Lines=, into Five and Twenty equal parts=, with Black Lead;
+after that I cut them perpendicularly by other Lines=,
+which I draw from the Top of the Page to the Bottom,
+as= you may see in the Table or Index,
+which I have put before this= Writing.
+Afterwards= I mark with Ink every Fifth line of the Twenty Five that I just now spoke of.\\
 
-Adversariorum Methodus=, or the Method of Common Places=.
+\fancyfoot[RE]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+[{\itshape The other Lines= are made with Red Lead,
+but for Conveniency one may make them with Black Lead,
+which is= better for Use than Red Lead.}]\\
 
-I take a White Paper Book of what Size I think fit, I divide the Two First Pages= which face one another, by parallel Lines=, into Five and Twenty equal parts=, with Black Lead;
-after that I cut them perpendicularly by other Lines=, which I draw from the Top of the Page to the Bottom, as= you may see in the Table or Index, which I have put before this= Writing.
-Afterwards= I mark with Ink every Fifth line of the Twenty Five that I just now spoke of.
+I put at the Beginning of every Fifth Space, or before the Middle,
+One of the Twenty Letters= which are design'd for this= Use;
+and a little farther in every Space,
+One of the Vowels= in their Natural Order.
+This= is= the Index or Table of the whole Volume,
+be it of what Size soever.
 
-[The other Lines= are made with Red Lead, but for Conveniency one may make them with Black Lead, which is= better for Use than Red Lead.]
+The Index being thus= made, I mark out,
+in the other Pages= of the Book, the Margin with Black Lead;
+I make it about the bigness= of an Inch,
+or a little bigger, if the Volume be in \emph{Folio},
+but in a less= Volume the Margin is= proportionably less= also.
 
-I put at the Beginning of every Fifth Space, or before the Middle, One of the Twenty Letters= which are design'd for this= Use;
-and a little farther in every Space, One of the Vowels= in their Natural Order.
-This= is= the Index or Table of the whole Volume, be it of what Size soever.
+If I would put any Thing in my Common Place Book,
+I look a \emph{Head} to which I may refer it,
+that I may be able to find it when I have Occasion.
+Every \emph{Head} ought to begin with some Considerable Word that is= Essential to the Matter treated of,
+and of this= Word one must carefully observe the First Letter,
+and the Vowel which follows= it;
+for upon these Two Letters= depends= the whole Use of our Index.\\
 
-The Index being thus= made, I mark out, in the other Pages= of the Book, the Margin with Black Lead;
-I make it about the bigness= of an Inch, or a little bigger, if the Volume be in folio, but in a less= Volume the Margin is= proportionably less= also.
-
-If I would put any Thing in my Common Place Book, I look a Head to which I may refer it, that I may be able to find it when I have Occasion.
-Every Head ought to begin with some Considerable Word that is= Essential to the Matter treated of, and of this= Word one must carefully observe the First Letter, and the Vowel which follows= it;
-for upon these Two Letters= depends= the whole Use of our Index.
-
-I leave out Three Letters= of the Alphabet as= useless=, to wit, K, Y, W, which are supplied by C, I, U, Letters= of a like Power.
+I leave out Three Letters= of the Alphabet as= useless=,
+to wit, K, Y, W, which are supplied by C, I, U, Letters= of a like Power.
 I put the Letter Q, which is= always= followed by an U in the Fifth Space of Z.
-By this= throwing of the Letter Q into the last Space of my Index, I preserve its= Uniformity, and do not at all shorten the Length of it:
-For it very seldom happens= that one meets= with an Head that begins= with Z U, and I have not found so much as= One for the Space of Five and Twenty Years=, during which Time I have made use of this= Method.
-Yet nevertheless=, if it be needful, nothing will hinder but that you may put it in the same Space with Q U, provided you make some Sort of Distinction.
+By this= throwing of the Letter Q into the last Space of my Index,
+I preserve its= Uniformity, and do not at all shorten the Length of it:
+For it very seldom happens= that one meets= with an \emph{Head} that begins= with Z U,
+and I have not found so much as= One for the Space of Five and Twenty Years=,
+during which Time I have made use of this= Method.
+Yet nevertheless=, if it be needful,
+nothing will hinder but that you may put it in the same Space with Q U,
+provided you make some Sort of Distinction.\\
 
-But one may, for more Exactness=, assign to Q a Place at the Bottom of the Index, which I have done formerly.
-When I meet with any thing worth putting into my Common-Place-Book, I presently look for a proper Head.
-Suppose, for Example, the Head were Epistle;
-I look in the Index the First Letter with the Vowel that follows=, which in this= Case are E I.
-If there is= found any Number in the Space marked E I, that shows= me the Space design'd for Words= which begin with E, and whose Vowel that immediately follows= is= I, I must refer to the Word Epistle in that Page what I have to take notice of.
-I Write the Head in pretty large Letters=, so that the principal Word is= found in the Margin, and I continue the Line in writing on what I have to remark.
-I constantly observe this= Method, that nought but the Head appear in the Margin, and go on without carrying the Line again into the Margin.
-When one has= thus= preserv'd the Margin clear, the Heads= present themselves= at First Sight
+But one may, for more Exactness=,
+assign to Q a Place at the Bottom of the Index,
+which I have done formerly.\\
 
-If in the Index I find no Number in the Space E I, I look in my Book the First Backside of the Page that I find blank, which Backside in a Book where there is= nothing else but the Index, must be the Second Page.
+When I meet with any thing worth putting into my Common-Place-Book,
+I presently look for a proper \emph{Head}.
+Suppose, for Example, the \emph{Head} were \emph{Epistle};
+I look in the Index the First Letter with the Vowel that follows=,
+which in this= Case are E I.
+If there is= found any Number in the Space marked E I,
+that shows= me the Space design'd for Words= which begin with E,
+and whose Vowel that immediately follows= is= I,
+I must refer to the Word \emph{Epistle} in that Page what I have to take notice of.
+I Write the \emph{Head} in pretty large Letters=,
+so that the principal Word is= found in the Margin,
+and I continue the Line in writing on what I have to remark.
+I constantly observe this= Method,
+that nought but the \emph{Head} appear in the Margin,
+and go on without carrying the Line again into the Margin.
+When one has= thus= preserv'd the Margin clear,
+the Heads= present themselves= at First Sight\\
 
-I write then in my Index after E I the Number 2, and the Head \textsc{Epistle} at the Top of the Margin of the Second Page, and all that is= to be put under this= Head in the same Page, as= you see I have done in the Second Page of this= Writing.
+If in the Index I find no Number in the Space E I,
+I look in my Book the First Backside of the Page that I find blank,
+which Backside in a Book where there is= nothing else but the Index,
+must be the Second Page.
 
-Since the Class= E I.
-does= solely take up the Second and Third Page, one may make Use of those Pages= only for Words= which begin, with E, and whose next Vowel is= I, as= Epicurus=, Ebionites= [1], Epigram, Edict, \&c.
+I write then in my Index after E I the Number 2,
+and the \emph{Head} \textothersc{Epistle} at the Top of the Margin of the Second Page,
+and all that is= to be put under this= \emph{Head} in the same Page,
+as= you see I have done in the Second Page of this= Writing.
+Since the Class= E I.\ does= solely take up the Second and Third Page,
+one may make Use of those Pages= only for Words= which begin,
+with E, and whose next Vowel is= I,
+as= \emph{Epicurus=}, \emph{Ebionites=}\footnote{\emph{See the Bottom of the Third Page.}},
+\emph{Epigram}, \emph{Edict}, \etc.
+The Reason why I always= begin at the Top of the Back of the Page,
+and that I assign to one Class= the Two Pages= which face one another,
+rather than a whole Leaf, is= that the Heads= of this= Class= may appear all at once,
+otherwise you must be at the Trouble of turning over the Leaf.\\
 
-[1]
-See the Bottom of the Third Page.
-
-The Reason why I always= begin at the Top of the Back of the Page, and that I assign to one Class= the Two Pages= which face one another, rather than a whole Leaf, is= that the Heads= of this= Class= may appear all at once, otherwise you must be at the Trouble of turning over the Leaf.
-
-Whensoever I would write a new Head, in my Common-Place-Book, I look presently in my Index for the Characteristick Letters= of the Word, and I see by the Number which follows= them where the Page assign'd to the Class= of this= Head is=.
+Whensoever I would write a new Head, in my Common-Place-Book,
+I look presently in my Index for the Characteristick Letters= of the Word,
+and I see by the Number which follows= them where the Page assign'd to the Class= of this= \emph{Head} is=.
 But if there be no Number to be found, I must look the First Back of the next Blank Page.
-I mark its= Number in the Index, and so I preserve this= Page, with the Right Side of the following Leaf for this= new Class=.
-Let the Word be for Example Adversaria, if I see no Number in the Space A E, I look the First Empty Back of a Leaf, which finding in the Fourth Page, I put in the Space A E the Number 4, and in the 4th Page the Head Adversaria, with all that ought to be put under this= Head, as= I have already done.
+I mark its= Number in the Index, and so I preserve this= Page,
+with the Right Side of the following Leaf for this= new Class=.
+Let the Word be for Example \emph{Adversaria}, if I see no Number in the Space A E,
+I look the First Empty Back of a Leaf, which finding in the Fourth Page,
+I put in the Space A E the Number 4, and in the 4th Page the \emph{Head} \emph{Adversaria},
+with all that ought to be put under this= Head, as= I have already done.\\
 
-After that, this= Fourth Page with the Fifth that follows= it, is= reserv'd for the Class= A E;
-that is= to say for Heads= which begin with A and where the following Vowel in the Word is= E, as= Agesilaus=, Acheron, Anger, \&c.
+After that, this= Fourth Page with the Fifth that follows= it,
+is= reserv'd for the Class= A E;
+that is= to say for \emph{Heads=} which begin with A and where the following Vowel in the \VV ord is= E,
+as= \emph{Agesilaus=}, \emph{Acheron}, \emph{Anger}, \etc.
 
-When the Two Pages= design'd for this= Head are quite full, then look for the Back of the next Blank Page:
-If it is= that which immediately follows=, I write at the Bottom of the Margin in the Page that I have last filled up, the Letter V, that is= Verte, Turn over;
+When the Two Pages= design'd for this= \emph{Head} are quite full,
+then look for the Back of the next Blank Page:
+If it is= that which immediately follows=,
+I write at the Bottom of the Margin in the Page that I have last filled up,
+the Letter V, that is= \emph{Verte}, \emph{Turn over};
 and likewise at the Top of the Page following.
-If the Pages= which immediately follow are already taken up by other Classes=, I write at the Bottom of the Page last filled up the Number of the next Back of the Page.
-I set down again the Head of which it treats= under which I go on to write what I have to put into my CommonPlace-Book, as= if it were in the same Page.
+If the Pages= which immediately follow are already taken up by other Classes=,
+I write at the Bottom of the Page last filled up the Number of the next Back of the Page.
+I set down again the \emph{Head} of which it treats= under which I go on to write what I have to put into my \emph{Common-Place-Book},
+as= if it were in the same Page.
 At the Top of this= new Back I set down also the Number of the Page which has= been last filled up.
-By these Numbers=, which refer to one another, the 1st of which is= at the End of one Page, and the 2d at the Beginning of another, one reads= the Matter which is= separated as= well as= if there was= nothing between them.
-For by this= Reciprocal Reference of Numbers=, one turns= over as= one Leaf all those Which are between them, as= if they were join'd together.
+By these Numbers=, which refer to one another,
+the 1st of which is= at the End of one Page,
+and the 2d at the Beginning of another,
+one reads= the Matter which is= separated as= well as= if there was= nothing between them.
+For by this= Reciprocal Reference of Numbers=,
+one turns= over as= one Leaf all those Which are between them,
+as= if they were join'd together.
 You have an Example of it in the Third and Fourteenth Pages=.
 
-Every Time I put a Number at the Bottom of a Page, I put it also in the Index;
+Every Time I put a Number at the Bottom of a Page,
+I put it also in the Index;
 but when I put only V, I make no Alteration in the Index;
 the Reason of which you will learn by Use.
 
-If the principal Word of the Head be a Monosyllable, (or a Word of One Syllable) and begins= with a Vowel, this= Vowel is= at the same Time both the First Letter of the Word, and the Characteristick Vowel;
-so I write the Word Art in A a, and Elf in E e.
+If the principal Word of the \emph{Head} be a Monosyllable,
+(or a Word of One Syllable) and begins= with a Vowel,
+this= Vowel is= at the same Time both the First Letter of the Word,
+and the Characteristick Vowel;
+so I write the Word \emph{Art} in A a, and Elf in E e.
 
-It may be seen by what I have said, that one is= to begin to write every Class= of Words= on the Back of the Page;
-It may from thence happen that the Backs= of all the Pages= may be full, while there may be [1]
+It may be seen by what I have said,
+that one is= to begin to write every Class= of Words= on the Back of the Page;
+It may from thence happen that the Backs= of all the Pages= may be full,
+while there may be {\footnote{\emph{See the Fifteenth, Seventeenth and Nineteenth Pages=, \etc.}}}
 Right Sides= enough which do yet remain empty.
-If you have a Mind then to fill up the Book, you may assign these Right Sides=, which are yet entirely blank, to new Classes=.
+If you have a Mind then to fill up the Book, you may assign these Right Sides=,
+which are yet entirely blank, to new Classes=.
 
-[1]
-See the Fifteenth, Seventeenth and Nineteenth Pages=, \&c.
-
-If any one thinks= that these Hundred Classes= are not sufficient to take in all Sorts= of Subjects= without Confusion, he may, following the same Method, increase the Number to Five Hundred, by adding a Vowel.
+If any one thinks= that these Hundred Classes= are not sufficient to take in all Sorts= of Subjects= without Confusion,
+he may, following the same Method, increase the Number to Five Hundred, by adding a Vowel.
 But having try'd both the one and the other Method;
-I prefer the former, and Use will convince those that shall make Tryal of it that it is= sufficient for all Subjects=, especially if they have a Book for every Science, in which they make their Collections=, or at least Two, for the Two Heads= to which we may refer all our Knowledge, to wit, Moral and Natural Philosophy.
+I prefer the former,
+and Use will convince those that shall make Tryal of it that it is= sufficient for all Subjects=,
+especially if they have a Book for every Science,
+in which they make their Collections=, or at least Two,
+for the Two Heads= to which we may refer all our Knowledge,
+to wit, \emph{Moral} and \emph{Natural} \emph{Philosophy}.
 
-One may also add to them a Third Book, which you may call the Science, or Knowledge of Signs=,which respects= the Use of Words=, and is= of far larger Extent than the Ordinary Critical Art.
+One may also add to them a Third Book, which you may call the \emph{Science},
+or \emph{Knowledge} of \emph{Signs=}, which respects= the Use of Words=,
+and is= of far larger Extent than the Ordinary Critical Art.
 
-As= for the Language in which one ought to express= the Titles=, I believe the Latin Tongue to be the most Convenient, provided one always= observes= the Nominative Case, least in Dissyllables=, (or Words= of Two Syllables=) or in Monosyllables= which begin with a Vowel, the Change, which happens= in the Oblique Cases= should cause Confusion.
-But it does= not much matter what Language you make Use of, provided you do not mix the Heads= of different Languages= together.
+As= for the Language in which one ought to express= the Titles=,
+I believe the \emph{Latin Tongue} to be the most Convenient,
+provided one always= observes= the Nominative Case, least in Dissyllables=,
+(or Words= of Two Syllables=) or in Monosyllables= which begin with a Vowel,
+the Change, which happens= in the Oblique Cases= should cause Confusion.
+But it does= not much matter what Language you make Use of,
+provided you do not mix the Heads= of different Languages= together.
 
 To remark a Place in an Author from whom I would collect any Thing I make use of this= Method:
-Before I write down any thing I put the Name of my Author in my Common-PlaceBook, and under that Name, the Title of the Treatise I am reading, the Volume, the Time and Place of the Edition, and (what ought never to be omitted) the Number of the Pages= that the whole Book contains=.
-For Example, I put in the Class= M.
-A.
-Marshami Canon Chronicus=, Aegyptiacus=, Graecus=, \& Disquisitiones=, Fol.
-Lond.
-1672, p.626.
-This= Number of the Pages= serves= me for the future to mark the Particular Treatise of the Author, and the Edition that I make use of.
-I have no more Need to mark the Place otherwise, than by putting in the Number of the Page from whence I have Collected what I have writ over the Number of the Pages= of the whole Volume.
-You will see an Example of it in Acherusia, where the Number 259 is= over the Number 626, that is= to say, the Number of the Pages= where the Place is= that is= treated of, over the Number of the Pages= of all the Volume.
-So I not only avoid the Trouble of writing Canon, \&c.
-but I can also, by the Help of the Rule of Three, find the same Passage in any other Edition whatever, by looking the Number of Pages= that the Edition I have not made use of contains=;
-since the Edition which I have used having 626 Pages=, hath given me 259.
-I confess= one does= not always= hit upon the very Page, because of the Spaces= which may be made in different Editions=, which are not always= proportionably equal;
+Before I write down any thing I put the Name of my Author in my \emph{Common-Place-Book},
+and under that Name, the Title of the Treatise I am reading,
+the Volume, the Time and Place of the Edition,
+and (what ought never to be omitted) the Number of the Pages= that the whole Book contains=.
+For Example, I put in the Class= M.\ A.\ %
+\emph{Marshami Canon Chronicus=,
+\AE gyptiacus=, Graecus=, \& Disquisitiones=,
+Fol.\ Lond.\ 1672, p.626}.
+This= Number of the Pages= serves= me for the future to mark the Particular Treatise of the Author,
+and the Edition that I make use of.
+I have no more Need to mark the Place otherwise,
+than by putting in the Number of the Page from whence I have Collected what I have writ over the Number of the Pages= of the whole Volume.
+You will see an Example of it in \emph{Acherusia},
+where the Number 259 is= over the Number 626,
+that is= to say, the Number of the Pages= where the Place is= that is= treated of,
+over the Number of the Pages= of all the Volume.
+So I not only avoid the Trouble of writing \emph{Canon}, \etc.
+but I can also, by the Help of the \emph{Rule of Three},
+find the same Passage in any other Edition whatever,
+by looking the Number of Pages= that the Edition I have not made use of contains=;
+since the Edition which I have used having 626 Pages=,
+hath given me 259.
+I confess= one does= not always= hit upon the very Page,
+because of the Spaces= which may be made in different Editions=,
+which are not always= proportionably equal;
 but nevertheless= you are never very far off of the Page;
-and it is= much better to find out the Passage within some few Pages= of the Place, than to be at the Trouble of turning over the whole Book to find it;
-as= you must do if the Book has= no Index, or where the Index is= not very correct
+and it is= much better to find out the Passage within some few Pages= of the Place,
+than to be at the Trouble of turning over the whole Book to find it;
+as= you must do if the Book has= no Index,
+or where the Index is= not very correct
 
-\place{Acherusia.}
-Pratum, ficta mortuorum Habitatio est Locus= prope Memphim, juxta Paludem, quam vocant Acherusiam, \&c.
-This= is= a Passage taken out of the First Book of Diodorus= Siculus=, the Sense of which is= this=:
-The Fields=, where they feign the Habitation of the Dead to be, is= a Place not far from Memphis=, near the Marsh called Acherusia, where there are most Delightful Fields=, with Lakes= and Woods= of Lotus= and Calamus=.
+\place{ACHERUSIA.}
+\emph{Pratum, ficta mortuorum Habitatio est Locus= prope Memphim,
+juxta Paludem, quam vocant Acherusiam, \etc.}
+This= is= a Passage taken out of the First Book of \emph{Diodorus= Siculus=},
+the Sense of which is= this=:
+The Fields=, where they feign the Habitation of the Dead to be,
+is= a Place not far from \emph{Memphis=},
+near the Marsh called \emph{Acherusia},
+where there are most Delightful Fields=,
+with Lakes= and Woods= of \emph{Lotus=} and \emph{Calamus=}.
 
-It is= not without Reason then that Orpheus= says= the Dead inhabit those Places=, because it is= there that the most and greatest Funeral Solemnities= of the Aegyptians= are Celebrated;
-they carry the Dead over the River Nile, and the Marsh Acherusia, and lay them in Subterraneous= Vaults=.
+It is= not without Reason then that \emph{Orpheus=} says= the Dead inhabit those Places=,
+because it is= there that the most and greatest Funeral Solemnities= of the \emph{\AE gyptians=} are Celebrated;
+they carry the Dead over the River \emph{Nile},
+and the Marsh \emph{Acherusia},
+and lay them in Subterraneous= Vaults=.
 
-There are other Stories= among the Grecians= concerning the Shades= below, which are very like those Stories= which are invented at this= Day in Aegypt.
-For they call the Boat which carries= over the Dead Daris=, and a Piece of Money is= given to the Waterman for his= Passage, whose Name in the Language of that Country is= called Charon.
-Not far from this= Place there is= the Temple of Gloomy Hecate, also the Gates= of Cocytus= and Lethe, shut up with great Brazen Bars=;
-there are also other Gates=, called the Gates= of Truth, before which stands= the Statue of Justice without an Head.
-Marsham 259/626.
+There are other Stories= among the \emph{Grecians=} concerning the Shades= below,
+which are very like those Stories= which are invented at this= Day in \emph{\AE gypt}.
+For they call the Boat which carries= over the Dead \emph{Daris=},
+and a Piece of Money is= given to the Waterman for his= Passage,
+whose Name in the Language of that Country is= called \emph{Charon}.
+Not far from this= Place there is= the Temple of \emph{Gloomy Hecate},
+also the Gates= of \emph{Cocytus=} and \emph{Lethe},
+shut up with great Brazen Bars=;
+there are also other Gates=,
+called the Gates= of Truth,
+before which stands= the Statue of Justice without an Head.
+\emph{Marsham} {\tiny $\displaystyle\frac{259}{626}$}.
 
+\vfill
 \begin{verbatim}
                 *
                * *
@@ -204,107 +381,227 @@ Marsham 259/626.
                * *
                 *
 \end{verbatim}
+\vfill
+\fancyhead[LE]{}
+\fancyfoot{}
 
-\place{Ebionites.}
+\newpage
+\fancyfoot[R]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+\place{EBIONITES.}\label{place:EI2}
+\marginpar{\color{red}\pageref{place:EI1}}
 Sell all that thou hast, and give it to the Poor, then come and follow me:
-But at that the Rich Man began to scratch his= Head, and was= not at all pleas='d with the Advice that Jesus= gave him.
-And the Lord said unto him, how say you I have fulfilled the Law and the Prophets=, since it is= written in the Law, thou shalt love thy Neighbour as= thy self;
-and lo there are many of thy Brethren, the Children of Abraham, who have bad Raiment, and die with Hunger, while no Help is= administred to them from you, tho' your House abounds= with all Good Things=?
-And having turn'd to Simon, his= Disciple, who sat next him, Simon, thou Son of Johanna, said he, it is= easier for a Camel to go through the Eye of a Needle, than for a Rich Man to enter into the kingdom of Heaven.
-Ebion alter'd this= Passage of the Gospel because he did not acknowledge Christ to be the Son of God, nor a Law-giver, but a bare Interpreter of the Law which was= given by Moses=.
-Grotius= 336/1060.
+But at that the Rich Man began to scratch his= Head,
+and was= not at all pleas='d with the Advice that Jesus= gave him.
+And the Lord said unto him, how say you I have fulfilled the Law and the Prophets=,
+since it is= written in the Law, thou shalt love thy Neighbour as= thy self;
+and lo there are many of thy Brethren, the Children of Abraham, who have bad Raiment,
+and die with Hunger, while no Help is= administred to them from you,
+tho' your House abounds= with all Good Things=?
+And having turn'd to Simon, his= Disciple, who sat next him, Simon, thou Son of Johanna,
+said he, it is= easier for a Camel to go through the Eye of a Needle,
+than for a Rich Man to enter into the kingdom of Heaven.
+Ebion alter'd this= Passage of the Gospel because he did not acknowledge Christ to be the Son of God,
+nor a Law-giver, but a bare Interpreter of the Law which was= given by Moses=.
+\emph{Grotius=} {\tiny$\displaystyle\frac{336}{1060}$}.
+\vfill
 
-\place{Hereticks.}
-Nostrum igitur fuit eligere \& optare meliora, ut ad vestram correctionem aditum haberemus=.
-Augustinus= Tom.
-VI, Col.
-116.
-fol.
-Basileae 1542.
-contra Epist.
-Manichaei, quam vocant Fundamenti.
-"We believed that
-" other Methods= ought to be taken, in
-" Order to make you retract your Er" rors=;
-Affronts= and Invectives= are by
-" all Means= to be avoided, ill Usage
-" and Persecution are never likely to
-" succeed;
-but the only Way to draw
-" you is= by kind Discourses= and Exhorta" tions=, which may demonstrate our ten" der Concern for you;
-according to that
-" of the Scripture, a Servant of the
-" Lord ought not to be Quarrelsom, but
-" Gentle to all Men;
-Apt to teach, Pati" ent,and with Modesty, to reprove those
-" that are not like-minded.
-Let those Persons= rigorously treat you, who know not how difficult it is= to come to the Knowledge of Truth, and to avoid Errors=.
-Let those Persons= rigorously treat you, who know not how hard a Matter it is=, and and how seldom Effected, to cause Carnal Imaginations= to give way to Spiritual and Pious= ones=.
-Let those Persons= rigorously treat you, who are not sensible of the extream Difficulties= that there are to purifie the Eye of the inward Man, in Order to make it capable of perceiving Truth, which is= the Sun of the Soul.
-Let
+\cleardoublepage
+\leavevmode\thispagestyle{empty}\newpage
+\place{HERETICKS.}
+\textit{Nostrum igitur fuit eligere \& optare meliora,
+ut ad vestram correctionem aditum haberemus=.}
+\textit{Augustinus= Tom.\ VI, Col.\ 116.\ fol.\ Basileae 1542.\
+contra Epist.\ Manichaei, quam vocant Fundamenti.} `We\\[-0.75\thefontsize]
 
-\place{Confession of Faith.}
-Periculosum nobis= admodum atque etiam miserabile est, tot nunc fides= existere, quot voluntates=;
-\& tot nobis= doctrinas= effe quot mores=, \&c.
-Hilarius=, p.
-211.
-in Lib.
-ad Constantium Augustum.
-Basil.
-1570, Fol.
-It is= a Thing both Deplorable and Dangerous=, that there are now as= many Confessions= of Faith as= there are Wills=, as= many Opinions= as= Inclinations=, and as= many Sources= of Blas= phemy as= there are Vices=, whilst we make as= many Confessions= of Faith as= we please, and Gloss= upon them as= we think fit.
-And as= there is= but One God, One Lord, and One Baptism, so there is= but One Faith, which One Faith we Renounce when we make many different Confessions=;
+\nointerlineskip
+\begin{minipage}[b]{0.9\textwidth}
+\noindent
+\begin{internallinenumbers}
+    believed that other Methods= ought to be taken,
+    in Order to make you retract your Errors=;
+    Affronts= and Invectives= are by all Means= to be avoided,
+    ill Usage and Persecution are never likely to succeed;
+    but the only Way to draw you is= by kind Discourses= and Exhortations=,
+    which may demonstrate our tender Concern for you;
+    according to that of the Scripture,
+    a Servant of the Lord ought not to be Quarrelsom,
+    but Gentle to all Men;
+    Apt to teach, Patient, and with Modesty,
+    to reprove those that are not like-minded.
+    Let those Persons= rigor-
+\end{internallinenumbers}
+\end{minipage}\\[-0.75\thefontsize]
+
+\nointerlineskip
+\noindent
+ously treat you,
+who know not how difficult it is= to come to the Knowledge of Truth,
+and to avoid Errors=.
+Let those Persons= rigorously treat you,
+who know not how hard a Matter it is=,
+and and how seldom Effected,
+to cause Carnal Imaginations= to give way to Spiritual and Pious=\label{place:HE1}%
+\marginpar{\raisebox{0pt}{\color{red}\pageref{place:HE2}}}
+
+\cleardoublepage
+\leavevmode\thispagestyle{empty}\newpage
+\place{CONFESSION OF FAITH.}
+\textit{Periculosum nobis= admodum atque etiam miserabile est,
+tot nunc fides= existere, quot voluntates=;
+\& tot nobis= doctrinas= effe quot mores=, \etc.}
+\textit{Hilarius=, p.\ 211. in Lib.\ ad Constantium Augustum.
+Basil. 1570, Fol.}
+It is= a Thing both Deplorable and Dangerous=,
+that there are now as= many Confessions= of Faith as= there are Wills=,
+as= many Opinions= as= Inclinations=,
+and as= many Sources= of Blas= phemy as= there are Vices=,
+whilst we make as= many Confessions= of Faith as= we please,
+and Gloss= upon them as= we think fit.
+And as= there is= but One God, One Lord, and One Baptism,
+so there is= but One Faith,
+which One Faith we Renounce when we make many different Confessions=;
 and certainly this= Diversity is= the Cause that there is= no more true Faith to be found.
-We are convinc'd, that after the Council at Nice there was= nothing, either on one Side or t'other, but writing Confessions= of Faith.
-And while they contend about Words=, while they debate about Novel Questions=, while they dispute about Equivocal Terms=, while they complain of Authors=, while every Body endeavours= to advance his= own Party, while no one can agree,
+We are convinc'd, that after the Council at Nice there was= nothing,
+either on one Side or t'other, but writing Confessions= of Faith.
+And while they contend about Words=,
+while they debate about Novel Questions=,
+while they dispute about Equivocal Terms=,
+while they complain of Authors=,
+while\label{place:CO1}\marginpar{\raisebox{0pt}{\color{red}\pageref{place:CO2}}}
 
-\place{Hereticks.}
-Let those Persons= rigorously treat you, who know not how many Sighs= and Groans= it costs= before one can attain to any small Knowledge of the Divine Being.
-Finally, let those Persons= rigorously treat you, who were never seduc'd by such Errors= as= they see you have been deceiv'd by.
-I pass= by that most pure Wisdom, to the Knowledge of which very few Spiritual Persons= arrive at in this= Life;
-yet although they know it but in very small Measure, because they are Men, yet they know it without doubting.
-For in the Catholick Church it is= not Penetration of Wit, nor Depth of Knowledge, but the Simplicity of the Faith, which makes= People sure and safe.
+\clearpage
+\newpage
+\fancyfoot[RO]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[inner sep = 0pt] (verte)
+            [anchor=south west] at (2ex, 2.75\thefontsize)
+            {\usebox\verte};
+    \end{tikzpicture}
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+\leavevmode\thispagestyle{empty}\newpage
+\fancyfoot[RE]{
+    \begin{tikzpicture}[overlay, black, every node/.style={draw=none}]
+        \node[align=right, inner sep = 0pt] (next word)
+            [anchor=north east] at (0, 2.5\thefontsize)
+            {\usebox\NextWordBox};
+    \end{tikzpicture}
+}
+\place{HERETICKS.}\label{place:HE2}
+\marginpar{\color{red}\pageref{place:HE1}}
+ones=.
+Let those Persons rigorously treat you,
+who are not sensible of the extream Difficulties that there are to purifie the Eye of the inward Man,
+in Order to make it capable of perceiving Truth,
+which is the Sun of the Soul.
+Let those Persons= rigorously treat you,
+who know not how many Sighs= and Groans= it costs= before one can attain to any small Knowledge of the Divine Being.
+Finally,
+let those Persons= rigorously treat you,
+who were never seduc'd by such Errors= as= they see you have been deceiv'd by.
+I pass= by that most pure Wisdom,
+to the Knowledge of which very few Spiritual Persons= arrive at in this= Life;
+yet although they know it but in very small Measure,
+because they are Men, yet they know it without doubting.
+For in the Catholick Church it is= not Penetration of Wit,
+nor Depth of Knowledge, but the Simplicity of the Faith,
+which makes= People sure and safe.
 
-Barbari quippe homines= Romanae, imo potius= humanae eruditionis= expertes=, qui nihil omnino sciunt, nisi quod a Doctoribus= suis= audiunt;
-quod audiunt hoc sequuntur, \&c.
-Salvianus= 162/339.
+\textit{Barbari quippe homines= Romanae,
+imo potius= humanae eruditionis= expertes=,
+qui nihil omnino sciunt,
+nisi quod a Doctoribus= suis= audiunt;
+quod audiunt hoc sequuntur, \etc.}
+\textit{Salvianus=} {\tiny$\displaystyle\frac{162}{339}$}.
 The Sense of which take as= follows=.
-This= Bishop speaking of the Arian Goths= and Vandals=, They are a Barbarous= People, says= he, who have not any Taste of the Roman Learning, and who are ignorant even of those Things= with which almost all the rest of Mankind are acquainted;
-they know nothing but what they have learnt from their Doctors=, and mind nothing but what they have heard from them.
-Whence People so ignorant as= these are, find themselves= under a Necessity of learning the Mysteries= of the Gospel, rather from the Instructions= which are given them, than from the Reading of Books=, therefore the Tradition and received Doctrine of their Masters= are the only Rule that they follow, because they know nothing but what they have taught 'em.
-They are Hereticks=, but they know not that they are so.
-They are so indeed in our Esteem, but they don't at all believe it;
-yea, on the contrary, they reckon themselves= to be true Catholicks=, and Brand us= with the Title of Hereticks=.
+This= Bishop speaking of the \emph{Arian Goths=} and \emph{Vandals=},
+They are a Barbarous= People, says= he,
+who have not any Taste of the \emph{Roman} Learning,
+and who are ignorant even of those Things= with which almost all the rest of Mankind are acquainted;
+they know nothing but what they have learnt from their Doctors=,
+and mind nothing but what they have heard from them.
+Whence People so ignorant as= these are,
+find themselves= under a Necessity of learning the Mysteries= of the Gospel,
+rather from the Instructions= which are given them,
+than from the Reading of Books=,
+therefore the Tradition and received Doctrine of their Masters= are the only Rule that they follow,
+because they know nothing but what they have taught 'em.
+They are Hereticks=,
+but they know not that they are so.
+They are so indeed in our Esteem,
+but they don't at all believe it;
+yea, on the contrary,
+they reckon themselves= to be true Catholicks=,
+and Brand us= with the Title of Hereticks=.
+
+\clearpage
+\newpage
+\place{HERETICKS.}
 They judge therefore of us= just as= we do of them.
-We are persuaded with our selves= that they do Wrong to the Divine Generation, in maintaining the Son to be inferiour to the Father.
+We are persuaded with our selves= that they do Wrong to the Divine Generation,
+in maintaining the Son to be inferiour to the Father.
 They imagine that we derogate from the Glory of the Father because we believe them to be Equal.
-The Truth is= on our Side, but they pretend it is= on theirs=.
-We give all due Honour to God, and they think that their Belief tends= more to the Honour of God than ours=.
-They are wanting in their Duty to God, but this= they count the highest Duty of Religion;
+The Truth is= on our Side,
+but they pretend it is= on theirs=.
+We give all due Honour to God,
+and they think that their Belief tends= more to the Honour of God than ours=.
+They are wanting in their Duty to God,
+but this= they count the highest Duty of Religion;
 and they make true Piety to conflict in that which we have a quite contrary Opinion of.
-They are then in an Error, but yet they are Sincere;
+They are then in an Error,
+but yet they are Sincere;
 and it proceeds= not from an Hatred, but Love of God.
-
-\place{Hereticks.}
-For they pretend that by it they do better testifie the Respect they have for God, and their Zeal for His= Glory.
-Therefore although they have not a right Faith, yet they nevertheless= look upon it as= a perfect Love of God.
+For they pretend that by it they do better testifie the Respect they have for God,
+and their Zeal for His= Glory.
+Therefore although they have not a right Faith,
+yet they nevertheless= look upon it as= a perfect Love of God.
 How these Persons= will be punished for their Errors= at the Day of Judgment the great Judge of the Universe alone knows=.
-In the mean Time I believe that God exercises= his= Patience towards= them, because he sees= that their Heart is= more right than their Faith;
-and that when they do deceive themselves=, it is= an Affection for Piety that is= the Cause of their Error.
+In the mean Time I believe that God exercises= his= Patience towards= them,
+because he sees= that their Heart is= more right than their Faith;
+and that when they do deceive themselves=,
+it is= an Affection for Piety that is= the Cause of their Error.
+\fancyfoot{}
 
-\place{Confession of Faith.}
-While no one can agree, while they Anathematize one another, there is= scarce any that sticks= close to Jesus= Christ.
+\clearpage
+\newpage
+\place{CONFESSION OF FAITH.}\label{place:CO2}
+\marginpar{\raisebox{0pt}{\color{red}\pageref{place:CO1}}}
+every Body endeavours= to advance his= own Party,
+while no one can agree,
+While no one can agree, while they Anathematize one another,
+there is= scarce any that sticks= close to Jesus= Christ.
 What Change was= there in the Confession of Faith but last Year?
 The First Synod of the Nicene Council ordains= that nothing should be said concerning the Homousion;
 the Second orders= and ordains= that they should speak of it;
-the Third excuses= the Fathers= of the Council, and pretends= that they took the Word Ousia simply;
+the Third excuses= the Fathers= of the Council,
+and pretends= that they took the Word Ousia simply;
 lastly, the Fourth, instead of excusing, condemns= 'em.
-As= to the Resemblance of the Son with his= Father, which is= the Confession of Faith of these unhappy Times=, they dispute whether he is= like in the Whole, or only in Part.
+As= to the Resemblance of the Son with his= Father,
+which is= the Confession of Faith of these unhappy Times=,
+they dispute whether he is= like in the Whole, or only in Part.
 Behold what Fine Inquirers= these are into the Secrets= of Heaven!
-In the mean while, it is= upon the Account of these Confessions= of Faith about the invisible Mysteries=, and about our Faith in God, that we thus= Calumniate one another.
+In the mean while,
+it is= upon the Account of these Confessions= of Faith about the invisible Mysteries=,
+and about our Faith in God,
+that we thus= Calumniate one another.
 We make Confessions= every Year, and also every Month;
-we Repent of what we have done, we Defend those that Repent of 'em, and afterwards= Anathematize those We have defended:
-So we Condemn either the Opinions= of others= in our selves=, or our own Opinions= in others=;
-and in thus= Tearing one another to Pieces=, we have been the Cause of each other's= Ruin.
+we Repent of what we have done, we Defend those that Repent of 'em,
+and afterwards= Anathematize those We have defended:
+So we Condemn either the Opinions= of others= in our selves=,
+or our own Opinions= in others=;
+and in thus= Tearing one another to Pieces=,
+we have been the Cause of each other's= Ruin.
 
-\textsc{Finis}
+\begin{center}
+{\large \itshape FINIS}
+\end{center}

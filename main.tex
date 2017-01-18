@@ -5,8 +5,11 @@
 \usepackage{yfonts}
 \usepackage{colortbl}
 \usepackage[english]{babel}
+\usepackage{lettrine}
+\usepackage{trajan}
 
 \newcommand\VV{V\kern-0.3ex V}
+\renewcommand\etc{\textit{\&c}}
 
 \usepackage[a6paper, total={2.5in, 4in}, marginparwidth=0.7in, marginparsep=1ex]{geometry}
 \addtolength{\textheight}{0.5in}
@@ -46,7 +49,13 @@
 \pagestyle{default}
 \setlength{\headsep}{0.5\thefontsize}
 
+% Ref http://tex.stackexchange.com/questions/86626/remove-double-spacing-inside-verbatim
+\makeatletter
+\def\verbatim@font{\linespread{0}\normalfont\ttfamily}
+\makeatother
+
 \usepackage[side, symbol, flushmargin, perpage, ragged]{footmisc}
+\usepackage{mparhack}
 \renewcommand{\thefootnote}{\normalsize\raisebox{-0.5\baselineskip}{\fnsymbol{footnote}}}
 
 \newlength{\gap}
@@ -60,13 +69,20 @@
 \addtolength{\shapelength}{-\shapeindent}
 
 \makeatletter
-\newcommand\place[1]{
-    \textsc{#1}]
+\newcommand\@place{
+    \@startsection{}{4}
+        {-3ex}
+        {\baselineskip}
+        {-1em}
+        {}
+}
+\newcommand\place[1]{%
+    \@place{#1]}
 }
 \makeatother
 
 \usepackage{lineno}
-\renewcommand\thelinenumber{\Large`}
+\renewcommand\thelinenumber{\Large\raisebox{-0.25\baselineskip}{`}}
 
 \title{A New Method of Making Common-Place-Books}
 \author{John Locke}
